@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenido{
+    width: 90%;
+    height: 600px;
+    background-image: url("./img/conmemoracion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(118, 109, 95);
+    margin: 0 auto;
+margin-top: 30px;    
+box-shadow:  0px 15px 25px rgb(42, 44, 45);
+
+}
+
+.contenido-navegacion{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.logo{
+    height: 55px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-link{
+    padding: 10px;
+    margin-right: 25px;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(169, 154, 130);
+}
+
+.nav-link-active{
+    border-bottom: 2px solid rgb(169, 154, 130);
+    
+}
+
+
+.nav-link:hover{
+    background-color: rgb(169, 154, 130);
+    border-radius: 5px;
+    color: white;
+    transition: 1s;
+    height: 10px;
+}
+
+.contenido-textos{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+}
+
+.contenido-textos .año{
+    font-family:  sans-serif;
+    font-size: 30px;
+    color: rgb(8, 8, 7);
+    margin-left: 4px;
+}
+
+.contenido-textos .titulo{
+    font-family: "bookman old style";
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(61, 53, 43);
+}
+
+.contenido-textos .subtitulo{
+    font-family: Arial;
+    margin-top: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+.slash{
+    width: 180px;
+    border-bottom: 2px solid black;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+.boton{
+    margin-top: 40px;
+}
+.boton .btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 11px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.boton .btn:hover{
+    background-color: rgb(64, 64, 64);
+    transition: 0.5s;
+}
+
+.imagen_adicional{
+    display: none;
+}
+@media (max-width:690px){
+    .nav-links{
+        display: none;
+    }
+    .contenido{
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+        height: 565px;
+    }
+    .imagen_adicional{
+        display: block;
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        
+    }
+
+    .imagen_adicional img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 30px;
+    }
+
+    .contenido-textos{
+        margin: 0 auto;
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+    .slash{
+        display: none;
+    }
+    .contenido-textos .año{
+        font-size: 25px;
+    }
+    .contenido-textos .titulo{
+        font-size: 30px;
+    }
+    .contenido-textos .subtitulo{
+        font-size: 17px;
+    }
+
+    .boton .btn{
+       
+        font-size: 17px;
+        border-radius: 10px;
+        
+    }
+    
+
+}
